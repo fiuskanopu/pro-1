@@ -1,0 +1,10 @@
+def find_crypto_bottom(prices):
+    bottom_price = float('inf')
+    bottom_index = -1
+
+    for i in range(len(prices)):
+        if prices[i] < bottom_price:
+            bottom_price = prices[i]
+            bottom_index = i
+
+    return bottom_price, bottom_index
